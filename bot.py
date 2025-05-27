@@ -77,3 +77,8 @@ class Bot(Client):
             self.LOGGER(__name__).info("Shutting down...")
         finally:
             loop.run_until_complete(self.stop())
+
+
+
+if __name__ == "__main__":
+    Bot().run()
